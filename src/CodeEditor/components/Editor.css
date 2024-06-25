@@ -1,0 +1,32 @@
+.code-editor-scrollable-area {
+  scrollbar-width: thin; /* Firefox: Set the scrollbar width */
+  scrollbar-color: hsl(var(--editor-scroll-thumb)) transparent; /* Firefox: Set the thumb and track color */
+}
+/* Defines the styles for the scrollbar */
+.code-editor-scrollable-area::-webkit-scrollbar,
+.code-editor-scrollable-area > div::-webkit-scrollbar {
+  width: 2px; /* Width of the scrollbar */
+  height: 2px;
+}
+
+/* Defines the track (background) of the scrollbar */
+.code-editor-scrollable-area::-webkit-scrollbar-track,
+.code-editor-scrollable-area > div::-webkit-scrollbar-track {
+  background: inherit; /* Color of the track */
+}
+
+/* Defines the thumb (the draggable part) of the scrollbar */
+.code-editor-scrollable-area::-webkit-scrollbar-thumb,
+.code-editor-scrollable-area > div::-webkit-scrollbar-thumb {
+  background: hsl(var(--editor-scroll-thumb) / 50%); /* Color of the thumb */
+  border-radius: 99px; /* Rounded corners of the thumb */
+}
+
+/* Defines the hover effect of the scrollbar thumb */
+.code-editor-scrollable-area::-webkit-scrollbar-thumb:hover,
+.code-editor-scrollable-area > div::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--editor-scroll-thumb)); /* Color of the thumb on hover */
+}
+
+.copy-button-styles button {
+}

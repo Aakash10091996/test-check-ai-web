@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc",
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "prettier", "tailwindcss"],
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/array-type": "off",
+    "@typescript-eslint/no-unsafe-assignment": "error",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/no-unsafe-member-access": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "tailwindcss/classnames-order": "error",
+    // "tailwindcss/no-custom-classname": "error",
+    "@typescript-eslint/no-inferrable-types": "off",
+    "tailwindcss/no-contradicting-classname": "error",
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        "prefer": "type-imports",
+        "disallowTypeAnnotations": false
+      }
+    ],
+    "linebreak-style": ["error", "unix"],
+    // "linebreak-style": ["error", "windows"],
+
+    "prettier/prettier": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/require-await": "error",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-misused-promises": [
+      "error",
+      {
+        "checksVoidReturn": false
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [".*"]
+      }
+    ]
+  }
+}

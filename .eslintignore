@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.husky/
+.vscode/
+public/
+next.config.mjs
+commitlint.config.js
+prettier.config.js
+postcss.config.js
+tailwind.config.ts
+src/components/ui
